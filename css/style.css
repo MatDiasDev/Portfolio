@@ -11,7 +11,7 @@ body {
 .icons {
     position: absolute;
     top: 0%;
-    right: 20%;
+    right: 78%;
 }
 
 .icons a {
@@ -38,4 +38,23 @@ body {
 
 .icons a:hover > i {
     transform: scale(1.6) rotate(25deg);
+}
+
+.apresentacao {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 400px;
+    z-index: 1;
+}
+
+.habilidades {
+    position: absolute;
+    top: 0;
+    right: 280px;
+    display: inline-flex;
 }
