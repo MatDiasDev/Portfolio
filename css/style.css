@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
 body {
     height: 100vh;
     background-color: black;
     color: #f6f6f6;
+}
+
+.meunome {
+    color: #22D4FD;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: "Anta", sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
 }
 
 .apresentacao {
@@ -9,6 +24,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
 }
 
 .icons a {
