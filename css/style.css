@@ -1,10 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: black;
     color: #f6f6f6;
 }
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+
+
+
+.cabecalho__menu__link {
+    font-family: "Exo 2", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+    gap: 80px;
+    text-decoration: none;
+}
+
+
+
+
 
 .meunome {
     color: #22D4FD;
@@ -21,7 +40,7 @@ body {
 }
 
 .apresentacao {
-    margin: 10%;
+    padding: 8% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,6 +51,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.apresentacao__conteudo__subtitulo {
+    font-family: "Exo 2", sans-serif;
 }
 
 .icons a {
@@ -59,4 +82,12 @@ body {
 
 .icons a:hover > i {
     transform: scale(1.6) rotate(25deg);
+}
+
+.rodape {
+    padding: 10px;
+    color: #f6f6f6;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
 }
