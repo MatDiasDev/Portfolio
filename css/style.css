@@ -72,11 +72,12 @@ body {
 
 .icons a {
     display: inline-flex;
+    flex-direction: column;
     width: 75px;
     height: 75px;
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
-    margin: 47px;
+    margin: 40px;
     border-radius: 50px;
     justify-content: center;
     align-items: center;
@@ -120,5 +121,16 @@ body {
     
     .apresentacao {
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+
+@media (max-width: 1240px) {
+    .icons a {
+        margin: 30px;
     }
 }
