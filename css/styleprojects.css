@@ -52,6 +52,8 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
+    display: flex;
+    justify-content: center;
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
@@ -61,8 +63,16 @@ body {
     font-family: var(--fonte-secundaria);
 }
 
+.apresentacao__projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
 .apresentacao__imagem {
-    width: 35%;
+    width: 500px;
+    height: 300px;
 }
 
 .rodape {
@@ -71,6 +81,7 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
+    margin-top: 10em;
 }
 
 @media (max-width: 1050px) {
