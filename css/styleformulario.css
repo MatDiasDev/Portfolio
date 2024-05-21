@@ -44,10 +44,10 @@ body {
 .formulario  .titulo { 
 
     color: var(--cor-terciaria);
-    font-size: 1.5em;
     margin-bottom: 10px;
     padding-bottom: 10px;
-  
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
   }
   
   .formulario {
@@ -75,7 +75,7 @@ body {
   .input-bordas{
     
     font: 15px/24px "Lato", Arial, sans-serif; 
-    color: var(--cor-terciaria); 
+    color: var(--cor-primaria); 
     width: 100%; 
     box-sizing: border-box; 
     letter-spacing: 1px;
@@ -146,5 +146,4 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    
 }
