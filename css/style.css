@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/* Importa as fontes 'Anta' e 'Exo 2' do Google Fonts */
 
 :root {
     --cor-primaria: #000000;
@@ -8,26 +9,31 @@
     --fonte-primaria: "Anta", sans-serif;
     --fonte-secundaria: "Exo 2", sans-serif;
 }
+/* Define variáveis CSS para cores e fontes, facilitando a manutenção e alterações futuras */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Remove margens e preenchimentos padrão e define box-sizing para incluir bordas e preenchimentos no tamanho total dos elementos */
 
 body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
+/* Define a cor de fundo e a cor do texto do corpo do documento */
 
 .cabecalho {
     padding: 2% 0% 0% 10%;
 }
+/* Adiciona preenchimento ao cabeçalho para espaçamento */
 
 .cabecalho__menu {
     display: flex;
     gap: 45px;
 }
+/* Define um layout flexível para o menu do cabeçalho e adiciona espaço entre os itens */
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
@@ -36,6 +42,7 @@ body {
     color: var(--cor-terciaria);
     text-decoration: none;
 }
+/* Estiliza os links do menu do cabeçalho com fonte, tamanho, peso e cor específicos */
 
 .apresentacao {
     padding: 8% 10%;
@@ -44,6 +51,7 @@ body {
     justify-content: space-between;
     gap: 30px;
 }
+/* Define um layout flexível para a seção de apresentação, com espaçamento e alinhamento */
 
 .apresentacao__conteudo {
     width: 50%;
@@ -51,24 +59,29 @@ body {
     flex-direction: column;
     gap: 30px;
 }
+/* Define a largura e o layout flexível em coluna para o conteúdo da apresentação */
 
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
+/* Estiliza o título do conteúdo da apresentação com tamanho de fonte e família de fonte específicos */
 
 .meunome {
     color: var(--cor-terciaria);
 }
+/* Define a cor do texto da classe 'meunome' */
 
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
+/* Estiliza o texto do conteúdo da apresentação com tamanho de fonte e família de fonte específicos */
 
 .apresentacao__conteudo__subtitulo {
     font-family: var(--fonte-secundaria);
 }
+/* Define a família de fonte para o subtítulo do conteúdo da apresentação */
 
 .icons a {
     display: inline-flex;
@@ -85,22 +98,27 @@ body {
     font-size: 1.87rem;
     text-align: center;
 }
+/* Estiliza os links dos ícones com layout flexível, tamanho, cores, bordas arredondadas, transição suave e centralização do texto */
 
 .icons a:hover {
     background: #04BFAD;
 }
+/* Muda a cor de fundo dos ícones ao passar o mouse */
 
 .icons a i {
-    transition: 00.4s all;
+    transition: 0.4s all;
 }
+/* Define uma transição suave para os ícones */
 
 .icons a:hover > i {
     transform: scale(1.6) rotate(25deg);
 }
+/* Aumenta e rotaciona os ícones ao passar o mouse */
 
 .apresentacao__imagem {
     width: 50%;
 }
+/* Define a largura das imagens na apresentação */
 
 .rodape {
     padding: 10px;
@@ -109,6 +127,7 @@ body {
     text-align: center;
     font-family: var(--fonte-secundaria);
 }
+/* Estiliza o rodapé com preenchimento, cores de fundo e texto, alinhamento centralizado e fonte específica */
 
 @media (max-width: 1050px) {
     .cabecalho {

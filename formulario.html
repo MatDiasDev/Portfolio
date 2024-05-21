@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
+    <!-- Inclui um arquivo CSS para essa página -->
     <link rel="stylesheet" href="./css/styleformulario.css">
+
+    <!-- Inclui um arquivo CSS de reset para remover estilos padrões dos navegadores -->
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
     <header class="cabecalho">
+
+        <!-- Menu de navegação dentro do cabeçalho -->
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="formacao.html">Formação</a>
@@ -18,10 +24,13 @@
     </header>
 
     <div class="paginaformulario">
+
+        <!-- Início do formulário -->
         <form class="formulario" method="post" action="enviaDados.php">
             
             <h2 class="titulo">Formulário de Contato</h2>
 
+            <!-- Campo de entrada para o nome -->
             <label class="label">
                 
                 <input type="text" class="input-bordas" placeholder="Nome" required="">
@@ -29,6 +38,7 @@
             
             </label>
 
+            <!-- Campo de entrada para o e-mail -->
             <label class="label">
                 
                 <input type="text" class="input-bordas" placeholder="E-mail" required="">
@@ -36,6 +46,7 @@
             
             </label>
 
+            <!-- Campo de entrada para o assunto -->
             <label class="label">
                 
                 <input type="text" class="input-bordas" placeholder="Assunto" required="">
@@ -43,11 +54,13 @@
             
             </label>
 
+            <!-- Campo oculto para evitar spam -->
             <label class="naoexibir">
                 <span>Não preencher:</span><br>
                 <input type="text" name="url" value=""></p>
             </label> 
 
+            <!-- Área de texto para a mensagem -->
             <label class="label">
                 
                 <textarea type="text" class="input-bordas textarea" rows="4" placeholder="Assunto" required=""></textarea>
@@ -55,12 +68,14 @@
             
             </label>
 
+            <!-- Botão de envio do formulário -->
             <button class="button-form borda-inversa"> Enviar</button>
 
         </form>
     </div>      
 </body>
 
+<!-- Rodapé do site -->
 <footer class="rodape">
     <p>Desenvolvido por Matheus Dias</p>
 </footer>

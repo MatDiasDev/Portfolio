@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/* Importa as fontes 'Anta' e 'Exo 2' do Google Fonts */
 
 :root {
     --cor-primaria: #000000;
@@ -8,26 +9,31 @@
     --fonte-primaria: "Anta", sans-serif;
     --fonte-secundaria: "Exo 2", sans-serif;
 }
+/* Define variáveis CSS para cores e fontes, facilitando a manutenção e alterações futuras */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Remove margens e preenchimentos padrão e define box-sizing para incluir bordas e preenchimentos no tamanho total dos elementos */
 
 body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
+/* Define a cor de fundo e a cor do texto do corpo do documento */
 
 .cabecalho {
     padding: 2% 0% 0% 10%;
 }
+/* Adiciona preenchimento ao cabeçalho para espaçamento */
 
 .cabecalho__menu {
     display: flex;
     gap: 45px;
 }
+/* Define um layout flexível para o menu do cabeçalho e adiciona espaço entre os itens */
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
@@ -36,44 +42,44 @@ body {
     color: var(--cor-terciaria);
     text-decoration: none;
 }
+/* Estiliza os links do menu do cabeçalho com fonte, tamanho, peso e cor específicos */
 
 .paginaformulario {
     margin-top: 90px;
 }
+/* Adiciona uma margem superior à página do formulário para espaçamento */
 
-.formulario  .titulo { 
-
+.formulario .titulo { 
     color: var(--cor-terciaria);
     margin-bottom: 10px;
     padding-bottom: 10px;
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
-  }
-  
-  .formulario {
-     
+}
+/* Estiliza o título do formulário com cor, margens, tamanho de fonte e família de fonte específicos */
+
+.formulario {
     max-width: 500px;
     margin: auto;
     background: var(--cor-primaria);
     overflow: hidden;
     padding: 20px;
     min-height: 100vh;
-  
-  }
-  
-  :focus{outline: none;}
-  
-  .label { 
-  
+}
+/* Define a largura máxima, centraliza o formulário, define cor de fundo, oculta overflow, adiciona preenchimento e define altura mínima para o formulário */
+
+:focus { outline: none; }
+/* Remove a borda padrão dos elementos focados */
+
+.label { 
     float: left; 
     width: 100%; 
     margin-bottom: 25px; 
     position: relative;
-  
-  }
-  
-  .input-bordas{
-    
+}
+/* Estiliza os rótulos com layout flutuante, largura total, margem inferior e posição relativa */
+
+.input-bordas {
     font: 15px/24px "Lato", Arial, sans-serif; 
     color: var(--cor-primaria); 
     width: 100%; 
@@ -82,68 +88,118 @@ body {
     border: 1px solid var(--cor-terciaria); 
     padding: 7px 14px 9px; 
     transition: 0.4s;
-  
-  }
-  
-  .textarea { resize:none!important; }
-  
-  .input-bordas ~ .focus-border:before,
-  .input-bordas ~ .focus-border:after{content: ""; position: absolute; top: 0; right: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.2s; transition-delay: 0.2s;}
-  .input-bordas ~ .focus-border:after{top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;}
-  .input-bordas ~ .focus-border i:before,
-  .input-bordas ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.2s;}
-  .input-bordas ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;}
-  .input-bordas:focus ~ .focus-border:before,
-  .input-bordas:focus ~ .focus-border:after{width: 100%; transition: 0.2s; transition-delay: 0.6s;}
-  .input-bordas:focus ~ .focus-border:after{transition-delay: 0.2s;}
-  .input-bordas:focus ~ .focus-border i:before,
-  .input-bordas:focus ~ .focus-border i:after{height: 100%; transition: 0.2s;}
-  .input-bordas:focus ~ .focus-border i:after{transition-delay: 0.4s;}
-  
-  
-  .button-form { 
-  
+}
+/* Estiliza os campos de entrada com fonte, cor, largura, espaçamento entre letras, borda, preenchimento e transição suave */
+
+.textarea { resize: none !important; }
+/* Remove a capacidade de redimensionar a área de texto */
+
+.input-bordas ~ .focus-border:before,
+.input-bordas ~ .focus-border:after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color: #3399FF; 
+    transition: 0.2s; 
+    transition-delay: 0.2s;
+}
+/* Define a borda de foco inicial antes e depois dos campos de entrada */
+
+.input-bordas ~ .focus-border:after {
+    top: auto; 
+    bottom: 0; 
+    right: auto; 
+    left: 0; 
+    transition-delay: 0.6s;
+}
+/* Define a borda de foco após os campos de entrada */
+
+.input-bordas ~ .focus-border i:before,
+.input-bordas ~ .focus-border i:after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 2px; 
+    height: 0; 
+    background-color: #3399FF; 
+    transition: 0.2s;
+}
+/* Define a borda de foco inicial antes e depois dos ícones de entrada */
+
+.input-bordas ~ .focus-border i:after {
+    left: auto; 
+    right: 0; 
+    top: auto; 
+    bottom: 0; 
+    transition-delay: 0.4s;
+}
+/* Define a borda de foco após os ícones de entrada */
+
+.input-bordas:focus ~ .focus-border:before,
+.input-bordas:focus ~ .focus-border:after {
+    width: 100%; 
+    transition: 0.2s; 
+    transition-delay: 0.6s;
+}
+/* Estende a largura da borda de foco ao focar nos campos de entrada */
+
+.input-bordas:focus ~ .focus-border:after {
+    transition-delay: 0.2s;
+}
+/* Ajusta o tempo de atraso da transição ao focar nos campos de entrada */
+
+.input-bordas:focus ~ .focus-border i:before,
+.input-bordas:focus ~ .focus-border i:after {
+    height: 100%; 
+    transition: 0.2s;
+}
+/* Estende a altura da borda de foco ao focar nos campos de entrada */
+
+.input-bordas:focus ~ .focus-border i:after {
+    transition-delay: 0.4s;
+}
+/* Ajusta o tempo de atraso da transição ao focar nos campos de entrada */
+
+.button-form { 
     background-color: var(--cor-terciaria);
     padding: 0.5em 1.3em;
     color: var(--cor-secundaria);
     font-size: 1.2em;
     border: none;
     cursor: pointer;
-  
-  }
-  
-  .borda-inversa {
-  
+}
+/* Estiliza o botão do formulário com cor de fundo, preenchimento, cor do texto, tamanho de fonte, sem borda e cursor de ponteiro */
+
+.borda-inversa {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    -webkit-transition-property: background;
     transition-property: background;
     box-shadow: inset 0 0 0 2px var(--cor-terciaria), 0 0 1px rgba(0, 0, 0, 0);
-  
-  }
-  
-  .borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
-    
-    background: none;
-    color:var(--cor-terciaria); 
-  
-  }
-  
-  /*Anti-span*/
-  .naoexibir { display:none; } 
+}
+/* Define o estilo do botão com transições suaves e efeito de sombra na borda */
 
-  .rodape {
+.borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
+    background: none;
+    color: var(--cor-terciaria); 
+}
+/* Altera a cor de fundo e do texto do botão ao passar o mouse, focar ou clicar */
+
+.naoexibir { display: none; }
+/* Oculta o campo utilizado para evitar spam */
+
+.rodape {
     padding: 10px;
     color: var(--cor-secundaria);
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
 }
+/* Estiliza o rodapé com preenchimento, cores de fundo e texto, alinhamento centralizado e fonte específica */

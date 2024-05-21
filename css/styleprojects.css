@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/* Importa as fontes 'Anta' e 'Exo 2' do Google Fonts */
 
 :root {
     --cor-primaria: #000000;
@@ -8,26 +9,31 @@
     --fonte-primaria: "Anta", sans-serif;
     --fonte-secundaria: "Exo 2", sans-serif;
 }
+/* Define variáveis CSS para cores e fontes, facilitando a manutenção e alterações futuras */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Remove margens e preenchimentos padrão e define box-sizing para incluir bordas e preenchimentos no tamanho total dos elementos */
 
 body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
+/* Define a cor de fundo e a cor do texto do corpo do documento */
 
 .cabecalho {
     padding: 2% 0% 0% 10%;
 }
+/* Adiciona preenchimento ao cabeçalho para espaçamento */
 
 .cabecalho__menu {
     display: flex;
     gap: 45px;
 }
+/* Define um layout flexível para o menu do cabeçalho e adiciona espaço entre os itens */
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
@@ -36,13 +42,15 @@ body {
     color: var(--cor-terciaria);
     text-decoration: none;
 }
+/* Estiliza os links do menu do cabeçalho com fonte, tamanho, peso e cor específicos */
 
 .apresentacao {
     padding: 8%;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
+/* Define um layout flexível para a seção de apresentação, com espaçamento, alinhamento e centralização */
 
 .apresentacao__conteudo {
     width: 50%;
@@ -50,6 +58,7 @@ body {
     flex-direction: column;
     gap: 30px;
 }
+/* Define a largura e o layout flexível em coluna para o conteúdo da apresentação, com espaçamento entre os itens */
 
 .apresentacao__conteudo__titulo {
     display: flex;
@@ -57,11 +66,13 @@ body {
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
+/* Centraliza e estiliza o título do conteúdo da apresentação com tamanho de fonte e família de fonte específicos */
 
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
+/* Estiliza o texto do conteúdo da apresentação com tamanho de fonte e família de fonte específicos */
 
 .apresentacao__projetos {
     display: flex;
@@ -69,11 +80,13 @@ body {
     justify-content: center;
     gap: 80px;
 }
+/* Define um layout flexível para a seção de projetos, com alinhamento central e espaçamento entre os itens */
 
 .apresentacao__imagem {
     width: 500px;
     height: 300px;
 }
+/* Define a largura e a altura das imagens na apresentação */
 
 .rodape {
     padding: 10px;
@@ -83,6 +96,7 @@ body {
     font-family: var(--fonte-secundaria);
     margin-top: 10em;
 }
+/* Estiliza o rodapé com preenchimento, cores de fundo e texto, alinhamento centralizado, fonte específica e margem superior */
 
 @media (max-width: 1050px) {
     .cabecalho {
