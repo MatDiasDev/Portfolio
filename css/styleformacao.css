@@ -79,11 +79,10 @@ body {
 /* Define a família de fonte para o subtítulo do conteúdo da apresentação */
 
 .rodape {
-    padding: 13px;
+    padding: 10px;
     color: var(--cor-secundaria);
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    margin-top: 15em;
 }
 /* Estiliza o rodapé com preenchimento, cores de fundo e texto, alinhamento centralizado, fonte específica e margem superior */
